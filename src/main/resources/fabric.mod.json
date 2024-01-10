@@ -1,0 +1,42 @@
+{
+	"schemaVersion": 1,
+	"id": "hipstersavage:hsn",
+	"version": "${version}",
+	"name": "Hipster's Skeletons Nerf",
+	"description": "A simple mod that makes skeletons a bit worse at shooting.",
+	"authors": [
+		"HipsterSavage"
+	],
+	"contact": {
+		"homepage": "https://yourwebsite.com/",
+		"sources": "https://github.com/HipsterSavage/hspn"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/hspn/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.hipstersavage.hspn.HSPNMod"
+		],
+		"client": [
+			"com.hipstersavage.hspn.HSPNModClient"
+		]
+	},
+	"mixins": [
+		"hspn.mixins.json",
+		{
+			"config": "hspn.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.15.0",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+ }
+ 
