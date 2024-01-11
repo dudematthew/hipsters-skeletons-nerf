@@ -1,42 +1,37 @@
 {
 	"schemaVersion": 1,
-	"id": "hipstersavage:hsn",
+	"id": "hsn",
 	"version": "${version}",
-	"name": "Hipster's Skeletons Nerf",
-	"description": "A simple mod that makes skeletons a bit worse at shooting.",
+	"name": "hipsters-skeletons-nerf",
+	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"HipsterSavage"
+		"Me!"
 	],
 	"contact": {
-		"homepage": "https://yourwebsite.com/",
-		"sources": "https://github.com/HipsterSavage/hspn"
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/hspn/icon.png",
+	"icon": "assets/hsn/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.hipstersavage.hspn.HSPNMod"
+			"com.hipstersavage.hsn.Hipstersskeletonsnerf"
 		],
-		"client": [
-			"com.hipstersavage.hspn.HSPNModClient"
+		"fabric-datagen": [
+			"com.hipstersavage.hsn.HipstersskeletonsnerfDataGenerator"
 		]
 	},
 	"mixins": [
-		"hspn.mixins.json",
-		{
-			"config": "hspn.client.mixins.json",
-			"environment": "client"
-		}
+		"hsn.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.15.0",
-		"minecraft": "~1.20.4",
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.1",
 		"java": ">=17",
 		"fabric-api": "*"
 	},
 	"suggests": {
 		"another-mod": "*"
 	}
- }
- 
+}
