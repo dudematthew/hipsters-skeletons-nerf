@@ -2,24 +2,27 @@
 	"schemaVersion": 1,
 	"id": "hsn",
 	"version": "${version}",
-	"name": "hipsters-skeletons-nerf",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Hipster's Skeletons Nerf",
+	"description": "A simple mod that makes skeletons a bit worse at shooting.",
 	"authors": [
-		"Me!"
+		"HipsterSavage"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/dudematthew/",
+		"sources": "https://github.com/dudematthew/hipsters-skeletons-nerf"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/hsn/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.hipstersavage.hsn.Hipstersskeletonsnerf"
+          "com.hipstersavage.hsn.HipstersSkeletonsNerf"
+		],
+		"client": [
+			"com.hipstersavage.hsn.HipstersSkeletonsNerfClient"
 		],
 		"fabric-datagen": [
-			"com.hipstersavage.hsn.HipstersskeletonsnerfDataGenerator"
+			"com.hipstersavage.hsn.HipstersSkeletonsNerfDataGenerator"
 		]
 	},
 	"mixins": [

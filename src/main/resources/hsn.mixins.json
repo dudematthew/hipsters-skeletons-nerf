@@ -3,7 +3,8 @@
 	"package": "com.hipstersavage.hsn.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"ExampleMixin"
+		"ExampleMixin",
+		"SkeletonEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
